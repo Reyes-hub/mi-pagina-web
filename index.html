@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Night Long – David DTX</title>
+    <style>
+        /* Estilo básico para el cuerpo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        /* Título con efectos de texto en neón */
+        h1 {
+            font-size: 3em;
+            color: #0ff;
+            text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #0ff; }
+            100% { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+        }
+
+        /* Estilo para el reproductor de música */
+        .audio-player {
+            margin-top: 40px;
+        }
+
+        .audio-player audio {
+            width: 80%;
+            max-width: 400px;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0ff;
+        }
+
+        /* Galería de imágenes */
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #09f;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px #0ff;
+        }
+
+        /* Fondo animado */
+        .bg-anim {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: radial-gradient(circle, #0ff 0%, #006 100%);
+            animation: pulse 5s infinite alternate;
+            z-index: -1;
+        }
+
+        @keyframes pulse {
+            0% { filter: hue-rotate(0deg) brightness(0.8); }
+            100% { filter: hue-rotate(360deg) brightness(1.4); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-anim"></div>
+
+    <h1>All Night Long – David DTX</h1>
+
+    <!-- Reproductor de Música -->
+    <div class="audio-player">
+        <audio controls>
+            <source src="sesion.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <!-- Galería de Imágenes -->
+    <div class="gallery">
+        <img src="C:\Users\Alumno\Desktop\Proyecto\Imagenes que utilizaré para mi proyecto\Portada-del-All-Night-Long.jpg" alt="Pancarta del All Night Long">
+        <img src="C:\Users\Alumno\Desktop\Proyecto\Imagenes que utilizaré para mi proyecto\David-DTX.jpg" alt="David DTX">
+        <img src="C:\Users\Alumno\Desktop\Proyecto\Imagenes que utilizaré para mi proyecto\Oskar 41.jpg" alt="Oskar 41">
+        <img src="C:\Users\Alumno\Desktop\Proyecto\Imagenes que utilizaré para mi proyecto\Alex Beat.jpg" alt="Alex Beat">
+    </div>
+
+</body>
+</html>
